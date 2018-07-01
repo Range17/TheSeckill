@@ -4,6 +4,12 @@
 <html>
 <head>
     <title>秒杀详情页</title>
+    <%--点击这个按键之后cookie去掉--%>
+    <button type="button" id="removeCookie" class="btn btn-success">
+        <span class="glyphicon glyphicon-phone"></span>
+        退出
+    </button>
+
     <%@include file="common/head.jsp" %>
 </head>
 <body>
