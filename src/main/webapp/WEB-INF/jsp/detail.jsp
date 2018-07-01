@@ -101,6 +101,13 @@
                 //规划我们的交互流程
                 //在cookie中查找手机号
                 var userPhone = $.cookie('userPhone');
+                //点击按钮删除cookie的事件
+                $('#removeCookie').click(function(){
+                    var inputPhone = $('#killPhoneKey').val();
+                    $.cookie('userPhone', inputPhone, { path: '/seckill' });
+                    window.location.reload();
+                });
+
                 //验证手机号
                 if (!seckill.validatePhone(userPhone)) {
                     //绑定手机 控制输出
